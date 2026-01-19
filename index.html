@@ -3,29 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Twine — Deer in the Headlights | Official Site</title>
-<meta name="description" content="Twine — wounded country and barrelling noise rock from Australia. Official site featuring music, shows, videos, press and merchandise.">
+<title>Twine</title>
 
 <style>
-/* ================= Base ================= */
+/* ===== Base (from index 2) ===== */
 body {
-  background: #f9f7f2;
-  color: #111;
+  background: #f9f7f2; /* kept from index 2 */
+  color: #111111;
   font-family: "Times New Roman", Georgia, serif;
   margin: 0;
-  line-height: 1.7;
+  line-height: 1.7; /* kept from index 2 */
 }
 
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 50px 20px; /* kept from index 2 */
   position: relative;
-  z-index: 1;
+  z-index: 1; /* kept from index 2 */
 }
 
-/* ================= Geocities ================= */
+/* ===== Geocities GIFs (from index 2) ===== */
 .geocities-decoration {
   position: fixed;
   z-index: 0;
@@ -45,101 +43,147 @@ body {
   width: 180px;
 }
 
-/* ================= Header ================= */
+/* ===== Header ===== */
 header {
   text-align: center;
-  padding-bottom: 50px;
-  border-bottom: 3px double #000;
+  padding: 40px 0 50px; /* merged spacing */
+  border-bottom: 3px double #000; /* kept from index 2 */
   margin-bottom: 40px;
 }
 
 .logo-container {
-  margin-bottom: 40px;
+  margin-bottom: 40px; /* kept from index 2 */
 }
 
 .logo-image {
   width: 100%;
-  max-width: 650px;
+  max-width: 650px; /* kept from index 2 */
   height: auto;
 }
 
-/* ================= Sticky Nav ================= */
+/* ===== Nav ===== */
 nav {
-  position: sticky;
+  position: sticky; /* kept from index 2 */
   top: 0;
-  background: #f9f7f2;
-  padding: 15px 0;
-  border-bottom: 1px solid #000;
-  z-index: 10;
+  background: #f9f7f2; /* kept from index 2 */
+  padding: 15px 0; /* kept from index 2 */
+  border-bottom: 1px solid #000; /* kept from index 2 */
+  z-index: 10; /* kept from index 2 */
+  font-size: 16px;
+  margin-top: 20px;
 }
 
 nav a {
   color: #0000cc;
   text-decoration: none;
   margin: 0 15px;
-  font-size: 16px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.5px; /* kept from index 2 */
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-/* ================= Sections ================= */
+/* ===== Sections ===== */
 section {
-  margin-bottom: 80px;
-  padding-top: 20px;
+  margin-bottom: 80px; /* kept from index 2 */
+  padding-top: 20px; /* kept from index 2 */
 }
 
 section h2 {
-  font-size: 26px;
+  font-size: 26px; /* kept from index 2 */
   border-bottom: 2px solid #000;
   padding-bottom: 10px;
-  margin-bottom: 30px;
-  letter-spacing: 0.5px;
+  margin-bottom: 30px; /* kept from index 2 */
+  letter-spacing: 0.5px; /* kept from index 2 */
 }
 
-p {
-  max-width: 70ch;
-  margin-bottom: 1.2em;
+p, li {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 70ch; /* kept from index 2 */
+  margin-bottom: 1.2em; /* kept from index 2 */
 }
 
-/* ================= Media ================= */
+/* ===== Media ===== */
+.media-section {
+  margin: 40px 0;
+}
+
 .media-container {
-  background: #fdfdfd;
-  border: 1px solid #ddd;
-  padding: 30px;
+  background: #fdfdfd; /* kept from index 2 */
+  border: 1px solid #ddd; /* kept from index 2 */
+  padding: 30px; /* kept from index 2 */
   margin: 30px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.media-container h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
 }
 
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 20px 0;
 }
 
 .video-container iframe {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   border: none;
 }
 
-/* ================= Press ================= */
+.image-container {
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ===== Press ===== */
 .press-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  margin-bottom: 40px;
+  margin: 40px 0;
+}
+
+.press-item {
+  text-align: center;
 }
 
 .press-item img {
   width: 100%;
-  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
 }
 
-/* ================= Links ================= */
+.press-item img:hover {
+  transform: scale(1.02);
+}
+
+/* ===== Links ===== */
 .links-list {
   list-style: none;
   padding: 0;
@@ -152,19 +196,25 @@ p {
 .links-list a {
   color: #0000cc;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  padding: 8px 0;
+  display: inline-block;
 }
 
-/* ================= Merch ================= */
+.links-list a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Merch ===== */
 .merch-container {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 30px; /* kept from index 2 */
 }
 
 .merch-button {
   display: inline-block;
-  padding: 14px 26px;
-  border: 2px solid #000;
+  padding: 14px 26px; /* kept from index 2 */
+  border: 2px solid #000; /* kept from index 2 */
   color: #000;
   text-decoration: none;
   font-weight: bold;
@@ -175,17 +225,35 @@ p {
   color: #fff;
 }
 
-.merch-image img {
-  max-width: 100%;
-  max-height: 420px;
-  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+.merch-image {
+  text-align: center;
+  margin-top: 30px;
 }
 
-/* ================= Press Links ================= */
+.merch-image img {
+  max-width: 100%;
+  max-height: 420px; /* kept from index 2 */
+  box-shadow: 0 4px 12px rgba(0,0,0,.2); /* kept from index 2 */
+  border-radius: 8px;
+  transition: transform .3s ease;
+}
+
+.merch-image img:hover {
+  transform: scale(1.02);
+}
+
+/* ===== Press Links ===== */
 .press-links {
-  background: #fdfdfd;
-  border-left: 4px solid #0000cc;
-  padding: 25px;
+  background: #fdfdfd; /* kept from index 2 */
+  border-left: 4px solid #0000cc; /* kept from index 2 */
+  padding: 25px; /* kept from index 2 */
+  margin: 30px 0;
+}
+
+.press-links h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .press-links ul {
@@ -195,30 +263,48 @@ p {
 
 .press-links li {
   margin-bottom: 15px;
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+}
+
+.press-links a {
+  color: #0000cc;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .publication-date {
+  color: #555; /* kept from index 2 */
   font-size: 13px;
-  color: #555;
+  margin-left: 10px;
 }
 
-/* ================= Footer ================= */
+/* ===== Footer ===== */
 footer {
   text-align: center;
-  border-top: 3px double #000;
   padding-top: 40px;
+  border-top: 3px double #000; /* kept from index 2 */
   margin-top: 60px;
 }
 
-/* ================= Mobile ================= */
+/* ===== Mobile ===== */
 @media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+
   nav a {
     display: block;
     margin: 10px 0;
   }
 
   .logo-image {
-    max-width: 420px;
+    max-width: 420px; /* kept from index 2 */
+  }
+
+  .press-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>
@@ -226,6 +312,7 @@ footer {
 
 <body>
 
+<!-- Geocities GIFs (from index 2) -->
 <img src="images/horse2.gif" class="geocities-decoration horse-gif-1" alt="">
 <img src="images/horse1.gif" class="geocities-decoration horse-gif-2" alt="">
 
@@ -251,27 +338,44 @@ footer {
   <h2>About</h2>
 
   <div class="press-grid">
-    <div class="press-item"><img src="images/press1.png" alt=""></div>
-    <div class="press-item"><img src="images/press2.png" alt=""></div>
+    <div class="press-item">
+      <img src="images/press1.png" alt="Press 1">
+    </div>
+    <div class="press-item">
+      <img src="images/press2.png" alt="Press 2">
+    </div>
   </div>
 
-  <p>Known for their wounded country and barrelling noise rock, Twine return with their new EP <em>Deer in the Headlights</em> (out November 7)...</p>
+  <p>Known for their wounded country and barrelling noise rock, Twine return with their new EP <em>Deer in the Headlights</em>. This bracing three-song release sees front-man Tom Katsaras sharpening the daggers of his songwriting for piercing tales of intimacy, regression and fear. Mixed by Alex Farrar (Wednesday, MJ Lenderman, Hotline TNT) and mastered by Greg Obis (MJ Lenderman, Duster, Dutch Interior), the EP stands as a triumphant swan song — the final recording made while the band was still situated in Adelaide.</p>
+  <p>It features members of the group’s foundational Adelaide line-up — Matt Schultz (guitar) and Thea Martin (violin) — alongside new recruits Luka Kilgarif (bass) and Harry Starick (drums) — as Katsaras transitions to Melbourne.</p>
+  <p>At first, the title track “Deer in the Headlights” plays as a finger-picked acoustic love ballad in the vein of John Fahey — “Darling I want to be open / Up from the inside,” Katsaras pleads — before his quivering vocals unravel into bursts of disordered guitars and squealing violins.</p>
+  <p>The second track, “Faith of Crisis”, riffs on the phrase “crisis of faith” for an unruly, explosive account of family, shame and adolescence.</p>
+  <p>EP closer “Out the Same Way” chronicles Katsaras’ impending move and further probes the fallacies of personal progress — “The wind will clip my wings / Out the same way I came in.” Across these songs runs the image of an unrepentant, furious dog — barking, collared and running backwards.</p>
+  <p>Formed in Adelaide in 2021, Twine began as a solo outlet for Katsaras’ experiments in brash, country-inflected rock. <em>Deer in the Headlights</em> follows the Australian Music Prize-nominated debut <em>New Old Horse</em> (2024), a tender yet eruptive exploration of identity and wayward relationships.</p>
+  <p>Known for their exhilarating live shows, Twine have supported Unwound (USA), The Hard Quartet (USA) and Mclusky (UK), and have played sold-out rooms across Australia and New Zealand, with festival appearances at Laneway 2025, Camp A Low Hum, Bigsound and SXSW Sydney.</p>
 </section>
 
 <section id="music">
   <h2>Music</h2>
   <ul class="links-list">
     <li><a href="https://twineadl.bandcamp.com/" target="_blank">Bandcamp</a></li>
-    <li><a href="https://open.spotify.com/" target="_blank">Spotify</a></li>
-    <li><a href="https://music.apple.com/" target="_blank">Apple Music</a></li>
-    <li><a href="https://tidal.com/" target="_blank">Tidal</a></li>
+    <li><a href="https://open.spotify.com/artist/5MHpGdn6o4ezeRsrN14wZk?si=eOZ6FXrvSiGkGBVVzfEcOg" target="_blank">Spotify</a></li>
+    <li><a href="https://music.apple.com/au/artist/twine/1565437709" target="_blank">Apple Music</a></li>
+    <li><a href="https://tidal.com/artist/4256106" target="_blank">Tidal</a></li>
   </ul>
 </section>
 
 <section id="shows">
   <h2>Shows</h2>
   <div class="media-container">
-    <!-- Bandsintown embed unchanged -->
+    <div class="bit-html-export">
+      <table class="bit-table"></table>
+      <div style="text-align: right; margin: 10px 0; font-size: 10px;">
+        <a style="color: #A9A9A9; text-decoration: none;" href="https://bandsintown.com?came_from=248" target="_blank">
+          <img style="height: 10px; width: auto;" src="https://bit-manager-assets.s3.amazonaws.com/widget/Poweredby-lightgray-v3.png" alt="powered by bandsintown">
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -279,24 +383,49 @@ footer {
   <h2>Media</h2>
 
   <div class="media-container">
-    <h3>Deer In The Headlights — Official Video</h3>
+    <h3>Deer In The Headlights - Official Video</h3>
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/rVkveGQ4Jak" allowfullscreen></iframe>
+      <iframe 
+        src="https://www.youtube.com/embed/rVkveGQ4Jak?si=8X4oETDG44hJrEcW" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <div class="media-container">
+    <h3>Live Performance</h3>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/lFSMMKk3SC4?si=ZIocQfJpgHJkYCcy" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
 </section>
 
 <section id="merch">
   <h2>Merchandise</h2>
-
   <div class="merch-container">
-    <p>Support Twine and get official merchandise.</p>
-    <a href="https://twineadl.bigcartel.com/" target="_blank" class="merch-button">Visit Store →</a>
+    <div class="merch-item">
+      <h3>Official Merchandise</h3>
+      <p>Support Twine and get official merch from our BigCartel store.</p>
+      <a href="https://twineadl.bigcartel.com/" target="_blank" class="merch-button">
+        Visit Store →
+      </a>
+    </div>
   </div>
 
   <div class="merch-image">
     <a href="https://twineadl.bigcartel.com/" target="_blank">
-      <img src="images/merch1.jpeg" alt="Twine merchandise">
+      <img src="images/merch1.jpeg" alt="Twine Official Merchandise">
     </a>
   </div>
 </section>
@@ -305,19 +434,37 @@ footer {
   <h2>Press & Notable Links</h2>
 
   <div class="press-links">
+    <h3>Featured Press</h3>
     <ul>
       <li>
-        <a href="https://www.monsterchildren.com/articles/monster-childrens-best-australian-albums-of-2025" target="_blank">
-          Best Australian Albums of 2025 — Monster Children
-        </a>
-        <span class="publication-date">— December 2024</span>
+        <a href="https://www.monsterchildren.com/articles/monster-childrens-best-australian-albums-of-2025" target="_blank">Best Australian Albums of 2025 - Monster Children</a>
+        <span class="publication-date">- December 2024</span>
+      </li>
+      <li>
+        <a href="https://www.monsterchildren.com/articles/how-twine-made-one-of-our-favorite-albums-of-the-year" target="_blank">How Twine Made One of Our Favorite Albums of the Year - Monster Children</a>
+        <span class="publication-date">- November 2024</span>
+      </li>
+      <li>
+        <a href="https://www.fbi.radio/articles/album-of-the-week/twine-new-old-horse" target="_blank">Album of the Week - FBI Radio</a>
+        <span class="publication-date">- December 2024</span>
+      </li>
+      <li>
+        <a href="https://www.abc.net.au/triplej/programs/program-unearthed/post-punk-with-strings-introducing-twine-/105078264" target="_blank">Post-punk with Strings: Introducing Twine - Triple J</a>
+        <span class="publication-date">- November 2024</span>
       </li>
     </ul>
   </div>
 </section>
 
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:twineband.adl@gmail.com">twineband.adl@gmail.com</a></p>
+  <p>Instagram: <a href="https://instagram.com/twineband__" target="_blank">@twineband__</a></p>
+</section>
+
 <footer>
   <p>© Twine 2025</p>
+  <p><a href="lyrics.html">View All Lyrics →</a></p>
 </footer>
 
 </div>
