@@ -27,7 +27,6 @@ header {
   margin-bottom: 40px;
 }
 
-/* Logo - Optimized Size */
 .logo-container {
   margin-bottom: 30px;
 }
@@ -77,7 +76,6 @@ p, li {
   line-height: 1.7;
 }
 
-/* OPTIMIZED MEDIA SECTIONS */
 .media-section {
   margin: 40px 0;
 }
@@ -98,10 +96,9 @@ p, li {
   color: #333;
 }
 
-/* YouTube Videos - Optimal Size */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   border-radius: 8px;
@@ -117,7 +114,6 @@ p, li {
   border: none;
 }
 
-/* Images - Proper Spacing & Borders */
 .image-container {
   text-align: center;
   margin: 30px 0;
@@ -133,7 +129,6 @@ p, li {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Press Images Grid */
 .press-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -158,7 +153,6 @@ p, li {
   transform: scale(1.02);
 }
 
-/* Links Section */
 .links-list {
   list-style: none;
   padding: 0;
@@ -180,7 +174,6 @@ p, li {
   text-decoration: underline;
 }
 
-/* Press Links */
 .press-links {
   background: #f9f9f9;
   border-left: 4px solid #0000cc;
@@ -218,12 +211,29 @@ p, li {
   margin-left: 10px;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding-top: 40px;
   border-top: 2px solid #000;
   margin-top: 60px;
+}
+
+/* --- NEW MERCH IMAGE STYLES --- */
+.merch-image {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.merch-image img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  transition: transform .3s ease;
+}
+
+.merch-image img:hover {
+  transform: scale(1.02);
 }
 
 /* Mobile Responsive */
@@ -232,7 +242,7 @@ footer {
     padding: 20px 15px;
   }
   
-  #band- {
+  #band-logo {
     font-size: 48px;
   }
   
@@ -250,23 +260,22 @@ footer {
 
 <body>
 
-<!-- Clean Header - No Decorations -->
 <div class="container">
 
 <header>
-  <div class="-container">
-    <img src="https://twinemusic.github.io/images/logo.png">
+  <div class="logo-container">
+    <img src="https://twinemusic.github.io/images/logo.png" alt="Twine logo" class="logo-image">
   </div>
   
   <nav>
-  <a href="#">About</a>
-  <a href="#music">Music</a>
-  <a href="#shows">Shows</a>
-  <a href="#media">Media</a>
-  <a href="#merch">Merch</a>
-  <a href="#press-links">Press</a>
-  <a href="lyrics.html">Lyrics</a>
-</nav>
+    <a href="#about">About</a>
+    <a href="#music">Music</a>
+    <a href="#shows">Shows</a>
+    <a href="#media">Media</a>
+    <a href="#merch">Merch</a>
+    <a href="#press-links">Press</a>
+    <a href="lyrics.html">Lyrics</a>
+  </nav>
 </header>
 
 <section id="about">
@@ -274,27 +283,29 @@ footer {
   
   <div class="press-grid">
     <div class="press-item">
-      <img src="https://twinemusic.github.io/images/press1.png">
+      <img src="https://twinemusic.github.io/images/press1.png" alt="Press 1">
     </div>
     <div class="press-item">
-      <img src="https://twinemusic.github.io/images/press2.png">
+      <img src="https://twinemusic.github.io/images/press2.png" alt="Press 2">
     </div>
   </div>
 
- <p>Known for their wounded country and barrelling noise rock, Twine return with their new EP <em>Deer in the Headlights</em> (out November 7). This bracing three-song release sees front-man Tom Katsaras sharpening the daggers of his songwriting for piercing tales of intimacy, regression and fear. Mixed by Alex Farrar (Wednesday, MJ Lenderman, Hotline TNT) and mastered by Greg Obis (MJ Lenderman, Duster, Dutch Interior), the EP stands as a triumphant swan song — the final recording made while the band was still situated in Adelaide.</p>
-<p>It features members of the group’s foundational Adelaide line-up — Matt Schultz (guitar) and Thea Martin (violin) — alongside new recruits Luka Kilgarif (bass) and Harry Starick (drums) — as Katsaras prepares to transition to Melbourne.</p>
-<p>At first, the title track “Deer in the Headlights” plays as a finger-picked acoustic love ballad in the vein of John Fahey — “Darling I want to be open / Up from the inside,” Katsaras pleads — before his quivering vocals unravel into bursts of disordered guitars and squealing violins.</p>
-<p>The second track, “Faith of Crisis”, riffs on the phrase “crisis of faith” for an unruly, explosive account of family, shame and adolescence.</p>
-<p>EP closer “Out the Same Way” chronicles Katsaras’ impending move and further probes the fallacies of personal progress — “The wind will clip my wings / Out the same way I came in.” Across these songs runs the image of an unrepentant, furious dog — barking, collared and running backwards.</p>
-<p>Formed in Adelaide in 2021, Twine began as a solo outlet for Katsaras’ experiments in brash, country-inflected rock. <em>Deer in the Headlights</em> follows the Australian Music Prize-nominated debut <em>New Old Horse</em> (2024), a tender yet eruptive exploration of identity and wayward relationships.</p>
-<p>Known for their exhilarating live shows, Twine have supported Unwound (USA), The Hard Quartet (USA) and Mclusky (UK), and have played sold-out rooms across Australia and New Zealand, with festival appearances at Laneway 2025, Camp A Low Hum, Bigsound and SXSW Sydney.</p>
+  <p>Known for their wounded country and barrelling noise rock, Twine return with their new EP <em>Deer in the Headlights</em> (out November 7). This bracing three-song release sees front-man Tom Katsaras sharpening the daggers of his songwriting for piercing tales of intimacy, regression and fear. Mixed by Alex Farrar (Wednesday, MJ Lenderman, Hotline TNT) and mastered by Greg Obis (MJ Lenderman, Duster, Dutch Interior), the EP stands as a triumphant swan song — the final recording made while the band was still situated in Adelaide.</p>
+  <p>It features members of the group’s foundational Adelaide line-up — Matt Schultz (guitar) and Thea Martin (violin) — alongside new recruits Luka Kilgarif (bass) and Harry Starick (drums) — as Katsaras prepares to transition to Melbourne.</p>
+  <p>At first, the title track “Deer in the Headlights” plays as a finger-picked acoustic love ballad in the vein of John Fahey — “Darling I want to be open / Up from the inside,” Katsaras pleads — before his quivering vocals unravel into bursts of disordered guitars and squealing violins.</p>
+  <p>The second track, “Faith of Crisis”, riffs on the phrase “crisis of faith” for an unruly, explosive account of family, shame and adolescence.</p>
+  <p>EP closer “Out the Same Way” chronicles Katsaras’ impending move and further probes the fallacies of personal progress — “The wind will clip my wings / Out the same way I came in.” Across these songs runs the image of an unrepentant, furious dog — barking, collared and running backwards.</p>
+  <p>Formed in Adelaide in 2021, Twine began as a solo outlet for Katsaras’ experiments in brash, country-inflected rock. <em>Deer in the Headlights</em> follows the Australian Music Prize-nominated debut <em>New Old Horse</em> (2024), a tender yet eruptive exploration of identity and wayward relationships.</p>
+  <p>Known for their exhilarating live shows, Twine have supported Unwound (USA), The Hard Quartet (USA) and Mclusky (UK), and have played sold-out rooms across Australia and New Zealand, with festival appearances at Laneway 2025, Camp A Low Hum, Bigsound and SXSW Sydney.</p>
+</section>
+
 <section id="music">
   <h2>Music</h2>
   <ul class="links-list">
     <li><a href="https://twineadl.bandcamp.com/" target="_blank">Bandcamp</a></li>
     <li><a href="https://open.spotify.com/artist/5MHpGdn6o4ezeRsrN14wZk?si=eOZ6FXrvSiGkGBVVzfEcOg" target="_blank">Spotify</a></li>
     <li><a href="https://music.apple.com/au/artist/twine/1565437709" target="_blank">Apple Music</a></li>
-    <li><a href="https://tidal.com/artist/4256106/u" target="_blank">Tidal</a></li>
+    <li><a href="https://tidal.com/artist/4256106" target="_blank">Tidal</a></li>
   </ul>
 </section>
 
@@ -355,8 +366,15 @@ footer {
       </a>
     </div>
   </div>
+
+  <!-- NEW IMAGE LINK -->
+  <div class="merch-image">
+    <a href="https://twineadl.bigcartel.com/" target="_blank">
+      <img src="merch1.jpeg" alt="Twine Official Merchandise">
+    </a>
+  </div>
 </section>
-  
+
 <section id="press-links">
   <h2>Press & Notable Links</h2>
   
